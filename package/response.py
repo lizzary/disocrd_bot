@@ -47,7 +47,7 @@ class Response(object):
         if r:
             await message.channel.send(message.author.mention + " " + r)
         else:
-            await message.channel.send(f"呼姆姆？...(脑中有串神秘代码: Class-Response:async def __response_for_mention_sb(self,{message.content},{llm_model})->GET FALSE)")
+            return
 
 
     async def __response_for_mention_sb(self,message:discord.Message,llm_model:str):
