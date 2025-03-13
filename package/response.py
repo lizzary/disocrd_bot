@@ -104,7 +104,7 @@ class Response(object):
             #单曲循环-None
             if 'None' in r:
                 print("提示没有歌名")
-                await message.channel.send(f"{message.author.mention}  {forget_message}  嘛~还是告诉你吧，你歌名哪去了(发怒(╯‵□′)╯︵┻━┻，序号也行！！")
+                await message.channel.send(f"{message.author.mention}  {forget_message}  ")
                 return
             #单曲循环-歌名/序号
             if '-' in r:
@@ -141,7 +141,7 @@ class Response(object):
             #播放歌单-None
             if 'None' in r:
                 print("提示没有歌名")
-                await message.channel.send(f"{message.author.mention}  {forget_message}  嘛~还是告诉你吧，你歌名哪去了(发怒(╯‵□′)╯︵┻━┻，序号也行！！")
+                await message.channel.send(f"{message.author.mention}  {forget_message}  ")
                 return
 
             if '-' in r:
