@@ -20,10 +20,7 @@ class Response(object):
 
     async def getResponse(self,message:discord.Message):
 
-        # if '妮娅' in message.content:
-        #
-        #     await self.__getNiyaResponse(message)
-        #     # await self.__general_response(message,'deepseek')
+
         await self.__getNiyaResponse(message)
 
     async def __getNiyaResponse(self,message:discord.Message):
