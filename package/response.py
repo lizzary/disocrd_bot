@@ -81,7 +81,7 @@ class Response(object):
         for word in vab_relate_to_music:
             if word in message.content:
                 gpt_for_music = Gpt(self.config)
-                r = gpt_for_music.tryToGetResponse(message.content.replace("妮娅",""), self.prompt.music_player, 0)
+                r = gpt_for_music.tryToGetResponse(message.content, self.prompt.music_player, 0)
                 print(r)
                 break
 
