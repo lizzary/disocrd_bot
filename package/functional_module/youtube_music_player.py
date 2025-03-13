@@ -23,7 +23,7 @@ class Youtube_music_player(object):
 
         self.stop_bool = False #用于禁用回调函数__loop_after_playing的循环播放功能
 
-    async def tryToStart(self,music_id:str,url:str,stream_url:str,setting:str):
+    def tryToStart(self,music_id:str,url:str,stream_url:str,setting:str):
         """
 
         :param music_id: 需要播放音频的youtube的序号（该序号用于歌单播放和记录上一次播放）
